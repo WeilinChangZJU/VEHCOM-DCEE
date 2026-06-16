@@ -1,10 +1,10 @@
 # Decision-Consistent Online Control for Move-Then-Serve UAV-Enabled ISAC
 
-This repository contains the clean R1 experiment code and processed artifacts for **Decision-Consistent Online Control for Move-Then-Serve UAV-Enabled Integrated Sensing and Communication**.
+This repository contains the experiment code and processed artifacts for **Decision-Consistent Online Control for Move-Then-Serve UAV-Enabled Integrated Sensing and Communication**.
 
 ## What This Repository Contains
 
-R1 simulator and controller code, final experiment runners, final configs, processed summaries, manuscript-ready tables, manuscript-ready figures, and reproducibility documentation.
+Simulator and controller code, final experiment runners, final configs, processed summaries, manuscript-ready tables, manuscript-ready figures, and reproducibility documentation.
 
 ## Key Claims Supported by Artifacts
 
