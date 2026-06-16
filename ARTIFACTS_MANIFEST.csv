@@ -1,0 +1,58 @@
+artifact_path,artifact_type,source_script,source_config,source_data,reproduced_table_or_figure,notes,include_public,include_internal
+data/processed/main_performance_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/mechanism_ablation_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/fc_union_table5_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/fc_union_solver_diagnostics_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/fc_union_rescue_diagnostics_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/fc_union_candidate_family_coverage_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/fc_union_best_source_counts.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/runtime_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/queue_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/queue_trajectories.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/slater_slack_summary_combined.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/v_tradeoff_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/finite_gap_running.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/physical_parameter_table.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/channel_sensitivity_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/primitive_noise_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/road_risk_variant_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/formal_drl_comparison_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/formal_pairwise_statistics.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/dcee_tuning_stage1.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/dcee_tuning_stage2.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/best_dcee_config_formal.json,processed_data,,,,,final processed artifact,yes,yes
+data/processed/drl_training_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/drl_checkpoint_validation_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/selected_drl_checkpoints.json,processed_data,,,,,final processed artifact,yes,yes
+data/processed/inference_runtime_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/altitude_summary.csv,processed_data,,,,,final processed artifact,yes,yes
+data/processed/altitude_selection_counts.csv,processed_data,,,,,final processed artifact,yes,yes
+tables/table_main_performance.tex,table,,,data/processed/,table_main_performance.tex,manuscript-ready table,yes,yes
+tables/table_mechanism_ablation.tex,table,,,data/processed/,table_mechanism_ablation.tex,manuscript-ready table,yes,yes
+tables/table5_fc_union_balanced.tex,table,,,data/processed/,table5_fc_union_balanced.tex,manuscript-ready table,yes,yes
+tables/table_runtime_scalability.tex,table,,,data/processed/,table_runtime_scalability.tex,manuscript-ready table,yes,yes
+tables/table_slater_slack_combined.tex,table,,,data/processed/,table_slater_slack_combined.tex,manuscript-ready table,yes,yes
+tables/table_v_tradeoff.tex,table,,,data/processed/,table_v_tradeoff.tex,manuscript-ready table,yes,yes
+tables/table_physical_settings.tex,table,,,data/processed/,table_physical_settings.tex,manuscript-ready table,yes,yes
+tables/table_channel_sensitivity.tex,table,,,data/processed/,table_channel_sensitivity.tex,manuscript-ready table,yes,yes
+tables/table_primitive_noise.tex,table,,,data/processed/,table_primitive_noise.tex,manuscript-ready table,yes,yes
+tables/table_road_risk_variants.tex,table,,,data/processed/,table_road_risk_variants.tex,manuscript-ready table,yes,yes
+tables/table_formal_drl_comparison.tex,table,,,data/processed/,table_formal_drl_comparison.tex,manuscript-ready table,yes,yes
+tables/table_formal_drl_training_protocol.tex,table,,,data/processed/,table_formal_drl_training_protocol.tex,manuscript-ready table,yes,yes
+tables/table_formal_dcee_tuning.tex,table,,,data/processed/,table_formal_dcee_tuning.tex,manuscript-ready table,yes,yes
+tables/table_altitude_sensitivity.tex,table,,,data/processed/,table_altitude_sensitivity.tex,manuscript-ready table,yes,yes
+figures/finite_gap_running_mean_balanced.pdf,figure,,,data/processed/,finite_gap_running_mean_balanced.pdf,manuscript-ready figure,yes,yes
+figures/finite_gap_histogram_balanced.pdf,figure,,,data/processed/,finite_gap_histogram_balanced.pdf,manuscript-ready figure,yes,yes
+figures/runtime_scaling.pdf,figure,,,data/processed/,runtime_scaling.pdf,manuscript-ready figure,yes,yes
+figures/queue_virtual_trajectories.pdf,figure,,,data/processed/,queue_virtual_trajectories.pdf,manuscript-ready figure,yes,yes
+figures/v_tradeoff.pdf,figure,,,data/processed/,v_tradeoff.pdf,manuscript-ready figure,yes,yes
+figures/slater_slack_boxplot.pdf,figure,,,data/processed/,slater_slack_boxplot.pdf,manuscript-ready figure,yes,yes
+figures/channel_sensitivity.pdf,figure,,,data/processed/,channel_sensitivity.pdf,manuscript-ready figure,yes,yes
+figures/primitive_noise_robustness.pdf,figure,,,data/processed/,primitive_noise_robustness.pdf,manuscript-ready figure,yes,yes
+figures/formal_drl_learning_curves.pdf,figure,,,data/processed/,formal_drl_learning_curves.pdf,manuscript-ready figure,yes,yes
+figures/formal_drl_penalty_backlog_tradeoff.pdf,figure,,,data/processed/,formal_drl_penalty_backlog_tradeoff.pdf,manuscript-ready figure,yes,yes
+figures/formal_drl_pairwise_ci.pdf,figure,,,data/processed/,formal_drl_pairwise_ci.pdf,manuscript-ready figure,yes,yes
+figures/altitude_sensitivity.pdf,figure,,,data/processed/,altitude_sensitivity.pdf,manuscript-ready figure,yes,yes
+models/selected/ddpg_seed_0_step_10000.zip,selected_model,scripts_r1/run_r1_formal_drl_training.py,configs_r1/formal_drl_training.json,data/processed/selected_drl_checkpoints.json,,selected validation checkpoint only,yes,yes
+models/selected/ppo_seed_0_step_10000.zip,selected_model,scripts_r1/run_r1_formal_drl_training.py,configs_r1/formal_drl_training.json,data/processed/selected_drl_checkpoints.json,,selected validation checkpoint only,yes,yes
+models/selected/sac_seed_2_step_25000.zip,selected_model,scripts_r1/run_r1_formal_drl_training.py,configs_r1/formal_drl_training.json,data/processed/selected_drl_checkpoints.json,,selected validation checkpoint only,yes,yes

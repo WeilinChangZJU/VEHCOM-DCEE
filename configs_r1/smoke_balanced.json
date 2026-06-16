@@ -1,0 +1,18 @@
+{
+  "description": "Small R1 smoke configuration for Patch 1 controller-purity validation.",
+  "slots": 2,
+  "seeds": 1,
+  "controllers": [
+    "proposed_full",
+    "static_uav"
+  ],
+  "num_vehicles": 6,
+  "num_targets": 3,
+  "benchmark_num_directions": 8,
+  "arrival_rate": 0.8,
+  "V": 12.0,
+  "rho_r": 0.01,
+  "shortlist_size": 7,
+  "inner_solver_maxiter": 30,
+  "inner_solver_ftol": 0.0001
+}

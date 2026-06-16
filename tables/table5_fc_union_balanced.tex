@@ -1,0 +1,23 @@
+% FC-Union finite-family benchmark and solver diagnostics in the balanced scenario.
+% The finite gap is nonnegative by construction and is computed relative to the union finite candidate family.
+% The signed residual is reported only as a numerical diagnostic.
+% Success and rescue rate are reported after applying the same deterministic rescue procedure to all candidate-level inner solves.
+% Entries report mean +/- standard deviation over 10 matched random seeds; each seed is first averaged over 200 slots.
+% The p95 gap reports the mean of seed-level 95th percentiles when the seed-level builder is used.
+% Candidates that remain unsuccessful after rescue are retained in diagnostics but are not eligible to define FC-Union.
+\begin{tabular}{llllllll}
+\toprule
+Method & Finite gap & p95 gap & Signed residual & Success & Rescue & Iter. & Union size \\
+\midrule
+FC-Union & 0.000 $\pm$ 0.000 & 0.000 & 0.000 $\pm$ 0.000 & 100.0\% & 15.9\% & 20.09 & 27.6 \\
+DCEE & 32.080 $\pm$ 15.245 & 96.958 & -32.080 $\pm$ 15.245 & 100.0\% & 14.4\% & 14.22 & 27.4 \\
+FC-Common & 46.586 $\pm$ 21.165 & 130.809 & -46.586 $\pm$ 21.165 & 100.0\% & 13.8\% & 13.85 & 27.4 \\
+Regularized-Execution & 98.482 $\pm$ 36.367 & 416.613 & -98.482 $\pm$ 36.367 & 100.0\% & 15.7\% & 15.85 & 27.4 \\
+Anchored-Mobility & 56.853 $\pm$ 40.363 & 268.413 & -56.853 $\pm$ 40.363 & 100.0\% & 13.5\% & 13.74 & 27.4 \\
+Static-Hovering & 106.075 $\pm$ 105.780 & 338.412 & -106.075 $\pm$ 105.780 & 100.0\% & 0.6\% & 4.01 & 27.9 \\
+GC-Lyapunov & 565.762 $\pm$ 135.573 & 2350.583 & -565.762 $\pm$ 135.573 & 100.0\% & 12.7\% & 14.59 & 27.8 \\
+RHC-Alt. & 409.998 $\pm$ 132.574 & 1673.624 & -409.998 $\pm$ 132.574 & 100.0\% & 14.6\% & 14.32 & 27.6 \\
+Freshness-Priority & 78.962 $\pm$ 22.179 & 354.812 & -78.962 $\pm$ 22.179 & 100.0\% & 57.3\% & 85.47 & 27.5 \\
+Myopic Re-optimization & 298.502 $\pm$ 438.970 & 1675.958 & -298.502 $\pm$ 438.970 & 100.0\% & 0.9\% & 4.76 & 28.0 \\
+\bottomrule
+\end{tabular}

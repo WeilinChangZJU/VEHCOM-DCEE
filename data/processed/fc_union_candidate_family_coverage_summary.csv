@@ -1,0 +1,10 @@
+profile,method,rows,min_candidate_count,max_candidate_count,executed_point_found_rate,has_full_family_rate,has_shortlist_rate,notes
+balanced,proposed_full,18000,8,11,1.0,0.0,1.0,shortlist/search family
+balanced,regularized_execution,18000,1,1,1.0,0.0,1.0,shortlist/search family
+balanced,anchored_mobility,18000,15,18,1.0,0.0,1.0,shortlist/search family
+balanced,static_uav,18000,1,1,1.0,0.0,0.0,executed point only
+balanced,full_candidate_exact,18000,15,18,1.0,1.0,1.0,full common finite family
+balanced,yang_go_lyapunov,18000,1,1,1.0,0.0,0.0,executed point only
+balanced,sun_receding_ao,18000,1,1,1.0,0.0,0.0,executed point only
+balanced,freshness_priority,18000,15,18,1.0,0.0,1.0,shortlist/search family
+balanced,myopic_reoptimization,18000,15,18,1.0,0.0,1.0,shortlist/search family

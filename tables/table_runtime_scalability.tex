@@ -1,0 +1,23 @@
+% Runtime and scalability diagnostics. Values are computed from lightweight R1 simulator runs.
+% Solves/slot and parallelizable solve count both report candidate-level post-motion resource solves.
+\begin{tabular}{llllllll}
+\toprule
+Scenario & Method & Mean ms/slot & p95 ms/slot & Solves/slot & Iter./slot & Success & Family size \\
+\midrule
+balanced_methods & DCEE & 81.85 & 212.70 & 10.03 & 36.40 & 100.0\% & 10.03 \\
+balanced_methods & FC-Common & 88.95 & 155.08 & 17.05 & 38.05 & 100.0\% & 17.05 \\
+balanced_methods & Anchored-Mobility & 27.84 & 70.54 & 17.02 & 9.72 & 100.0\% & 17.02 \\
+balanced_methods & Regularized-Execution & 42.12 & 96.40 & 1.00 & 17.40 & 100.0\% & 1.00 \\
+balanced_methods & Static-Hovering & 17.14 & 60.78 & 1.00 & 7.22 & 100.0\% & 1.00 \\
+balanced_methods & Freshness-Priority & 55.22 & 124.98 & 17.02 & 25.10 & 100.0\% & 17.02 \\
+K3 & DCEE & 54.92 & 98.91 & 10.20 & 28.20 & 100.0\% & 10.20 \\
+K6 & DCEE & 91.01 & 222.74 & 10.03 & 36.40 & 100.0\% & 10.03 \\
+K9 & DCEE & 69.69 & 147.40 & 10.40 & 25.80 & 100.0\% & 10.40 \\
+S2 & DCEE & 84.05 & 211.39 & 10.00 & 40.67 & 100.0\% & 10.00 \\
+S3 & DCEE & 81.09 & 191.15 & 10.03 & 36.40 & 100.0\% & 10.03 \\
+S5 & DCEE & 98.61 & 188.96 & 10.07 & 30.23 & 100.0\% & 10.07 \\
+shortlist5 & DCEE & 55.95 & 137.25 & 4.03 & 23.90 & 100.0\% & 4.03 \\
+shortlist11 & DCEE & 80.80 & 191.07 & 10.03 & 36.40 & 100.0\% & 10.03 \\
+shortlist15 & DCEE & 104.05 & 264.25 & 14.03 & 44.25 & 100.0\% & 14.03 \\
+\bottomrule
+\end{tabular}

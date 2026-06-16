@@ -1,0 +1,43 @@
+{
+  "description": "Formal DCEE validation tuning for Patch 10.",
+  "stage1_validation_seeds": [20, 21, 22],
+  "stage1_slots": 100,
+  "stage2_validation_seeds": [20, 21, 22, 23, 24],
+  "stage2_slots": 200,
+  "test_seeds": [100, 101, 102, 103, 104, 105, 106, 107, 108, 109],
+  "test_slots": 200,
+  "stage1_grid": {
+    "V": [24, 32, 48, 64, 96],
+    "rho_r": [0.0025, 0.005, 0.01],
+    "shortlist": [4, 6, 8]
+  },
+  "stage2_top_k": 5,
+  "base": {
+    "num_vehicles": 6,
+    "num_targets": 3,
+    "benchmark_num_directions": 16,
+    "arrival_rate": 0.8,
+    "V": 12.0,
+    "rho_r": 0.01,
+    "eta_t": 2.0,
+    "g0_sens": 96.0,
+    "mu_reduction_scale": 12.0,
+    "c_Y": 8.0,
+    "c_Z": 8.0,
+    "aoi_threshold": 5.0,
+    "uncertainty_threshold": 3.5,
+    "init_x": 200.0,
+    "init_y": 0.0,
+    "shortlist_num_local_dirs": 8,
+    "shortlist_radius_scale": 0.45,
+    "shortlist_size": 11,
+    "sensing_success_gain": 1.2,
+    "refresh_uncertainty_gain": 1.15,
+    "nonrefresh_mu_factor": 0.15,
+    "inner_solver_maxiter": 80,
+    "inner_solver_ftol": 0.0001,
+    "sun_horizon_steps": 2,
+    "sun_outer_rounds": 1,
+    "sun_num_candidates": 8
+  }
+}

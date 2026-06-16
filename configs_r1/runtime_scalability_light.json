@@ -1,0 +1,58 @@
+{
+  "description": "Patch 4 lightweight runtime and scalability diagnostics. This does not run FC-Union rescue.",
+  "slots": 20,
+  "seed_values": [0, 1],
+  "methods": ["proposed_full"],
+  "base": {
+    "num_vehicles": 6,
+    "num_targets": 3,
+    "benchmark_num_directions": 16,
+    "arrival_rate": 0.8,
+    "V": 12.0,
+    "rho_r": 0.01,
+    "eta_t": 2.0,
+    "g0_sens": 96.0,
+    "mu_reduction_scale": 12.0,
+    "c_Y": 8.0,
+    "c_Z": 8.0,
+    "aoi_threshold": 5.0,
+    "uncertainty_threshold": 3.5,
+    "init_x": 200.0,
+    "init_y": 0.0,
+    "shortlist_num_local_dirs": 8,
+    "shortlist_radius_scale": 0.45,
+    "shortlist_size": 11,
+    "sensing_success_gain": 1.2,
+    "refresh_uncertainty_gain": 1.15,
+    "nonrefresh_mu_factor": 0.15,
+    "inner_solver_maxiter": 80,
+    "inner_solver_ftol": 0.0001,
+    "sun_horizon_steps": 2,
+    "sun_outer_rounds": 1,
+    "sun_num_candidates": 8
+  },
+  "scenarios": [
+    {
+      "name": "balanced_methods",
+      "scale_axis": "method",
+      "scale_value": "balanced",
+      "methods": [
+        "proposed_full",
+        "full_candidate_exact",
+        "anchored_mobility",
+        "regularized_execution",
+        "static_uav",
+        "freshness_priority"
+      ]
+    },
+    {"name": "K3", "scale_axis": "K", "scale_value": 3, "num_vehicles": 3},
+    {"name": "K6", "scale_axis": "K", "scale_value": 6, "num_vehicles": 6},
+    {"name": "K9", "scale_axis": "K", "scale_value": 9, "num_vehicles": 9},
+    {"name": "S2", "scale_axis": "S", "scale_value": 2, "num_targets": 2},
+    {"name": "S3", "scale_axis": "S", "scale_value": 3, "num_targets": 3},
+    {"name": "S5", "scale_axis": "S", "scale_value": 5, "num_targets": 5},
+    {"name": "shortlist5", "scale_axis": "shortlist", "scale_value": 5, "shortlist_size": 5},
+    {"name": "shortlist11", "scale_axis": "shortlist", "scale_value": 11, "shortlist_size": 11},
+    {"name": "shortlist15", "scale_axis": "shortlist", "scale_value": 15, "shortlist_size": 15}
+  ]
+}

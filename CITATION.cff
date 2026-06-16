@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Decision-Consistent Online Control for Move-Then-Serve UAV-Enabled Integrated Sensing and Communication"
+message: "If you use this code or processed experiment artifacts, please cite the associated manuscript."
+type: software
+authors:
+  - family-names: Chang
+    given-names: Weilin
+  - family-names: Zhang
+    given-names: Shiqiang
+  - family-names: Yang
+    given-names: Yongli
+  - family-names: Cao
+    given-names: Yang
+version: "R1-experiment-artifacts"
+date-released: "2026-06-16"
+doi: "TBD"

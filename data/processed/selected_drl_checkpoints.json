@@ -1,0 +1,29 @@
+{
+  "DDPG": {
+    "method": "DDPG-Mobility-Exact",
+    "train_seed": 0,
+    "checkpoint_step": 10000,
+    "model_path": "results_r1\\formal_drl_tuning\\models\\ddpg_seed_0_step_10000.zip",
+    "validation_total_penalty_mean": 2.1439120929976587,
+    "validation_queue_backlog_mean": 288.679221789868,
+    "selection_rule": "minimum validation mean penalty; tie-break lower backlog and earlier checkpoint"
+  },
+  "PPO": {
+    "method": "PPO-Mobility-Exact",
+    "train_seed": 0,
+    "checkpoint_step": 10000,
+    "model_path": "results_r1\\formal_drl_tuning\\models\\ppo_seed_0_step_10000.zip",
+    "validation_total_penalty_mean": 2.0369678102295454,
+    "validation_queue_backlog_mean": 287.74841812555826,
+    "selection_rule": "minimum validation mean penalty; tie-break lower backlog and earlier checkpoint"
+  },
+  "SAC": {
+    "method": "SAC-Mobility-Exact",
+    "train_seed": 2,
+    "checkpoint_step": 25000,
+    "model_path": "results_r1\\formal_drl_tuning\\models\\sac_seed_2_step_25000.zip",
+    "validation_total_penalty_mean": 2.0457654337974422,
+    "validation_queue_backlog_mean": 287.86618109797155,
+    "selection_rule": "minimum validation mean penalty; tie-break lower backlog and earlier checkpoint"
+  }
+}

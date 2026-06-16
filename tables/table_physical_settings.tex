@@ -1,0 +1,17 @@
+% SI-interpretable scenario settings. Some quantities remain simulator-equivalent scales.
+\begin{tabular}{llll}
+\toprule
+parameter & value & unit & interpretation \\
+\midrule
+corridor length & 1200 & m & 2D road corridor length \\
+corridor width & 80 & m & lateral operating width \\
+UAV altitude & 100 & m & fixed-altitude baseline \\
+slot duration & 1.0 & s & control slot duration \\
+UAV max speed & 15.0 & m/s & mobility constraint \\
+bandwidth & 5.0 & MHz-equivalent & communication bandwidth scale \\
+total power & 8.0 & W-equivalent & joint communication/sensing budget \\
+vehicle speed range & 8.0-18.0 & m/s & moving vehicle process \\
+target speed range & 3.0-8.0 & m/s & moving target process \\
+road-risk field & Gaussian/hotspot/lane-side & dimensionless & HD-map or traffic-risk proxy \\
+\bottomrule
+\end{tabular}

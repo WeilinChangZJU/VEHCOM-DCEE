@@ -1,0 +1,79 @@
+{
+  "description": "Formal mobility-only DRL baselines for Patch 10.",
+  "train_seeds": [0, 1, 2],
+  "validation_seeds": [20, 21, 22, 23, 24],
+  "test_seeds": [100, 101, 102, 103, 104, 105, 106, 107, 108, 109],
+  "training_horizon": 200,
+  "validation_slots": 100,
+  "test_slots": 200,
+  "algorithms": ["PPO", "SAC", "DDPG"],
+  "train_steps": {
+    "PPO": 50000,
+    "SAC": 50000,
+    "DDPG": 50000
+  },
+  "checkpoints": [10000, 25000, 50000],
+  "base": {
+    "num_vehicles": 6,
+    "num_targets": 3,
+    "benchmark_num_directions": 16,
+    "arrival_rate": 0.8,
+    "V": 12.0,
+    "rho_r": 0.01,
+    "eta_t": 2.0,
+    "g0_sens": 96.0,
+    "mu_reduction_scale": 12.0,
+    "c_Y": 8.0,
+    "c_Z": 8.0,
+    "aoi_threshold": 5.0,
+    "uncertainty_threshold": 3.5,
+    "init_x": 200.0,
+    "init_y": 0.0,
+    "shortlist_num_local_dirs": 8,
+    "shortlist_radius_scale": 0.45,
+    "shortlist_size": 11,
+    "sensing_success_gain": 1.2,
+    "refresh_uncertainty_gain": 1.15,
+    "nonrefresh_mu_factor": 0.15,
+    "inner_solver_maxiter": 80,
+    "inner_solver_ftol": 0.0001,
+    "sun_horizon_steps": 2,
+    "sun_outer_rounds": 1,
+    "sun_num_candidates": 8
+  },
+  "reward": {
+    "penalty_weight": 1.0,
+    "queue_weight": 0.004,
+    "virtual_weight": 0.015,
+    "aoi_violation_weight": 0.25,
+    "uncertainty_violation_weight": 0.35,
+    "reward_scale": 1.0
+  },
+  "ppo_kwargs": {
+    "n_steps": 256,
+    "batch_size": 64,
+    "learning_rate": 0.0003,
+    "gamma": 0.98,
+    "verbose": 0
+  },
+  "sac_kwargs": {
+    "learning_rate": 0.0003,
+    "buffer_size": 50000,
+    "learning_starts": 256,
+    "batch_size": 64,
+    "gamma": 0.98,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "verbose": 0
+  },
+  "ddpg_kwargs": {
+    "learning_rate": 0.0003,
+    "buffer_size": 50000,
+    "learning_starts": 256,
+    "batch_size": 64,
+    "gamma": 0.98,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "verbose": 0
+  }
+}

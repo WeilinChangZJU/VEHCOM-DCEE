@@ -1,0 +1,7 @@
+method,method_label,altitude_m,count,fraction
+DCEE-2D,DCEE-2D,100.0,500,1.0
+DCEE-3D,DCEE-3D,80.0,493,0.986
+DCEE-3D,DCEE-3D,100.0,7,0.014
+Fixed-h80,Fixed h=80 m,80.0,500,1.0
+Fixed-h100,Fixed h=100 m,100.0,500,1.0
+Fixed-h120,Fixed h=120 m,120.0,500,1.0

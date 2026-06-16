@@ -1,0 +1,25 @@
+% Empirical Slater slack diagnostics for the balanced stress profile and a relaxed light-load sanity profile. These are diagnostics, not a proof of general feasibility.
+\begin{tabular}{llllll}
+\toprule
+profile & method_label & component & mean_slack & p5_slack & violation_ratio \\
+\midrule
+balanced & DCEE & data_service & 0.820 & -10.000 & 56.5\% \\
+balanced & DCEE & aoi & -11.030 & -15.000 & 98.2\% \\
+balanced & DCEE & uncertainty & -0.189 & -3.000 & 44.9\% \\
+balanced & FC-Common & data_service & 0.799 & -10.000 & 57.5\% \\
+balanced & FC-Common & aoi & -11.072 & -15.000 & 98.3\% \\
+balanced & FC-Common & uncertainty & -0.180 & -2.999 & 44.2\% \\
+balanced & Anchored-Mobility & data_service & 1.460 & -10.000 & 52.8\% \\
+balanced & Anchored-Mobility & aoi & -10.964 & -15.000 & 98.3\% \\
+balanced & Anchored-Mobility & uncertainty & -0.201 & -3.033 & 45.2\% \\
+balanced & Static-Hovering & data_service & -0.413 & -11.000 & 69.1\% \\
+balanced & Static-Hovering & aoi & -13.597 & -15.000 & 98.6\% \\
+balanced & Static-Hovering & uncertainty & -3.467 & -5.226 & 93.4\% \\
+balanced & Freshness-Priority & data_service & -6.667 & -12.000 & 99.6\% \\
+balanced & Freshness-Priority & aoi & -10.975 & -15.000 & 98.2\% \\
+balanced & Freshness-Priority & uncertainty & -0.187 & -3.256 & 41.2\% \\
+slater_relaxed & DCEE & data_service & 0.759 & -2.000 & 29.7\% \\
+slater_relaxed & DCEE & aoi & 1.784 & 1.000 & 0.0\% \\
+slater_relaxed & DCEE & uncertainty & 5.185 & 3.933 & 0.0\% \\
+\bottomrule
+\end{tabular}

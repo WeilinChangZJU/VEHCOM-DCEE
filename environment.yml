@@ -1,0 +1,15 @@
+name: vehcom-dcee-r1
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pytest
+  - pip
+  - pip:
+      - gymnasium>=1.2
+      - stable-baselines3>=2.8
+      - torch>=2.0

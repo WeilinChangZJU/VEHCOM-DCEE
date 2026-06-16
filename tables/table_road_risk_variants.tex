@@ -1,0 +1,22 @@
+% Road-risk variant diagnostics. Road cost is interpreted as an HD-map or traffic-risk proxy.
+\begin{tabular}{lllllll}
+\toprule
+road_variant & method_label & mean_penalty & mean_backlog & mean_aoi_excess & mean_uncertainty_excess & solver_success_rate \\
+\midrule
+gaussian & DCEE & 2.140 & 239.356 & 10.789 & 1.828 & 100.0\% \\
+gaussian & FC-Common & 2.144 & 239.632 & 10.911 & 1.820 & 100.0\% \\
+gaussian & Anchored-Mobility & 2.121 & 227.917 & 10.791 & 1.835 & 100.0\% \\
+gaussian & Static-Hovering & 1.895 & 273.229 & 12.549 & 3.044 & 100.0\% \\
+gaussian & Freshness-Priority & 2.020 & 342.119 & 10.669 & 1.847 & 100.0\% \\
+lane_side & DCEE & 2.163 & 241.200 & 10.791 & 1.829 & 100.0\% \\
+lane_side & FC-Common & 2.151 & 230.114 & 10.911 & 1.822 & 100.0\% \\
+lane_side & Anchored-Mobility & 2.125 & 253.676 & 10.791 & 1.834 & 100.0\% \\
+lane_side & Static-Hovering & 1.888 & 273.229 & 12.549 & 3.044 & 100.0\% \\
+lane_side & Freshness-Priority & 2.025 & 342.119 & 10.669 & 1.847 & 100.0\% \\
+hotspot & DCEE & 2.129 & 240.193 & 10.789 & 1.827 & 100.0\% \\
+hotspot & FC-Common & 2.136 & 238.610 & 10.911 & 1.820 & 100.0\% \\
+hotspot & Anchored-Mobility & 2.108 & 223.044 & 10.791 & 1.838 & 100.0\% \\
+hotspot & Static-Hovering & 1.886 & 273.229 & 12.549 & 3.044 & 100.0\% \\
+hotspot & Freshness-Priority & 2.009 & 342.119 & 10.669 & 1.847 & 100.0\% \\
+\bottomrule
+\end{tabular}
