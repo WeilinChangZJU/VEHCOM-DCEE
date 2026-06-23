@@ -39,16 +39,8 @@ Main performance; FC-Union benchmark; runtime; queue/Slater/V diagnostics; physi
 
 Quick tests take minutes. Full FC-Union and formal DRL reproduction can take hours on a local CPU.
 
-## How to Cite
-
-See `CITATION.cff`.
-
 ## License
 
 Source code is released under the MIT License. Processed summaries, generated
 tables, and generated figures are released under CC BY 4.0; see
 `DATA_LICENSE.md`.
-
-## Contact
-
-Weilin Chang, weilin.zju@gmail.com
