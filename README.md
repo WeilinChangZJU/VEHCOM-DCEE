@@ -1,4 +1,4 @@
-# Decision-Consistent Online Control for Move-Then-Serve UAV-Enabled ISAC
+# VEHCOM-DCEE Source Code
 
 ## What This Repository Contains
 
