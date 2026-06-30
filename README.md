@@ -1,7 +1,5 @@
 # Decision-Consistent Online Control for Move-Then-Serve UAV-Enabled ISAC
 
-This repository contains the experiment code and processed artifacts for **Decision-Consistent Online Control for Move-Then-Serve UAV-Enabled Integrated Sensing and Communication**.
-
 ## What This Repository Contains
 
 Simulator and controller code, final experiment runners, final configs, processed summaries, manuscript-ready tables, manuscript-ready figures, and reproducibility documentation.
@@ -34,13 +32,3 @@ See `REPRODUCE.md`. Processed summaries are under `data/processed/`, tables unde
 ## Experiment Groups
 
 Main performance; FC-Union benchmark; runtime; queue/Slater/V diagnostics; physical/channel/primitive robustness; formal DRL baselines; altitude sensitivity.
-
-## Expected Runtime
-
-Quick tests take minutes. Full FC-Union and formal DRL reproduction can take hours on a local CPU.
-
-## License
-
-Source code is released under the MIT License. Processed summaries, generated
-tables, and generated figures are released under CC BY 4.0; see
-`DATA_LICENSE.md`.
